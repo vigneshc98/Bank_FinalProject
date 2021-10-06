@@ -217,11 +217,7 @@ public class TransactionServ extends HttpServlet {
     			e.printStackTrace();
     			response.sendRedirect("TransactionFailed.jsp");
     		}
-//        }
-//        else {
-//        	response.sendRedirect("welcome.jsp");
-//        	session.setAttribute("re-load", null);
-//        }
+
 	}
 
 }
