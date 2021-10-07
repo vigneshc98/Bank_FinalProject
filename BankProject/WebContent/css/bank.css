@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#myVideo{
+    width:-100vw;
+    height: 120vh;
+    position: fixed;
+    -webkit-filter: blur(2px);
+     /* min-width: 100%;
+     min-height: 100%; */
+ }
+/* #container::before{
+    content: "";
+    background-image: url('../img/bankBG.jpg');
+    background-size: 100% 100%;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+} */
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 4rem;
+    font-family: 'Azeret Mono', monospace;
+    font-size: 1.2rem;
+
+    background: -webkit-linear-gradient(rgb(82, 96, 221), rgb(17, 4, 63));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#star{
+    font-size: 2.8rem;
+    background: -webkit-linear-gradient(rgb(250, 235, 153), rgb(255, 215, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+img{
+    height: 4rem;
+    width: 4rem;
+    position: relative;
+    left: 1.3rem;
+    bottom: 0.4rem;
+}
+/* --------------------------FORM----------------------- */
+#container #forms{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    top: 7rem;
+}
+
+#container #forms #adjust1{
+    display: flex;
+}
+#container #forms #adjust1 p > i{
+    position: relative;
+    top: 0.6rem;
+    left: 0.3rem;
+    font-weight: bold;
+}
+
+#container #forms #adjust2{
+    width: 15rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* --------Input--------- */
+#container #forms input{
+    height: 2rem;
+    width: 15rem;
+    text-align: center;
+    border-radius: 0.4rem;
+    font-family: 'Azeret Mono', monospace;
+}
+
+a{
+    font-weight: bold;
+    color: rgb(14, 19, 83);
+}
+a:hover{
+    font-size: 1.1rem;
+    color: rgb(14, 19, 83);
+}
+/* ----------------------------button---------- */
+#container #forms #adjust2 .btn{
+    width: 6.5rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+}
+#btn_submit{
+    background-color: rgb(35, 182, 35);
+}
+#btn_clear{
+    background-color: rgb(253, 80, 80);
+}
+.btn:hover{
+    cursor: pointer;
+}
+#eyemove{
+    position: relative;
+    right: 2rem;
+    top: 1.2px;
+    width:1.9rem;
+    height: 1.9rem;
+    background-color: rgb(255, 255, 255);
+}
+/* ---------------------------Error message--------- */
+.sp{
+    height: 1.2rem;
+    width: 15rem;
+}
+
+
+
+
+/* ----------------------------FOOTER--------------------- */
+/* #footer p{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    height: 1.5rem;
+    background-color: black;
+    color: white;
+} */

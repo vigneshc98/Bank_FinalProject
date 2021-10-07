@@ -1,0 +1,166 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    height: 40rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.container img{
+    width: 14rem;
+    height: 14rem;
+    border-radius: 2rem;
+}
+.logout{
+    display: flex;
+    justify-content: space-between;
+    width: 52rem;
+    position: relative;
+    left: 19.2rem;
+}
+.logout #logoutbtn{
+    width: 6rem;
+    height: 6rem;
+}
+
+.nav-back{
+    display: flex;
+    align-items: center;
+    width: 100vh;
+}
+
+.form-link{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 17rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#formError{
+    color: red;
+}
+/* -------------------file------------- */
+#fileId{
+    width: 7rem;
+    height: 1.3rem;
+    text-align: center;
+    background-color: blue;
+    border-radius: 1rem;
+    color: whitesmoke;
+    position: relative;
+    bottom: 2rem;
+    left: 0.9rem;
+    font-size: 1rem;
+}
+
+/* ---------------------------------- */
+.sub-form-child{
+    border: none;
+    font-size: 1.5rem;
+}
+
+.form-main-child{
+    position:relative;
+    left: 9rem;
+    bottom: 1rem;
+    height: 11rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.5rem;
+}
+.sub-form-child-temp{
+    border: 2px solid red;
+    border-radius: 0.3rem;
+}
+
+input[type='submit']{
+    background-color: rgb(60, 199, 60);
+    width: 6rem;
+    height: 2rem;
+    border-radius: 1rem;
+    color: rgb(255, 255, 255);
+}
+input[type='submit']:hover{
+    cursor: pointer;
+}
+/* ----------------------button-------------- */
+.btn-edit1{
+    width: 6rem;
+    height: 2rem;
+    position: relative;
+    left: 1.1rem;
+    bottom: 5.4rem;
+    background-color: rgb(60, 199, 60);
+    border-radius: 1rem;
+    color: aliceblue;
+}
+.btn-edit1:hover{
+    cursor: pointer;
+}
+.special-submit .btn-save2{
+    width: 6rem;
+    height: 2rem;
+    background-color: rgb(221, 34, 34);
+    border-radius: 1rem;
+    color: aliceblue;
+}
+.special-submit .btn-save2:hover{
+    cursor: pointer;
+}
+
+.special-submit{
+    position: relative;
+    left: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: red; */
+    width: 15rem;
+    height: 3rem;
+}
+.special-button-div{
+    width: 8rem;
+    height: 3rem;
+    /* background-color: orange; */
+}
+#nav-back-btn{
+    position: absolute;
+    left: 18rem;
+    width: 6rem;
+    height: 2rem;
+    background-color: blue;
+    border-radius: 0.4rem;
+    color: aliceblue;
+}
+/* ----------------------------input tag placement------------- */
+#ip1{
+    position: relative;
+    left: 3.6rem;
+}
+#ip2{
+    position: relative;
+    left: 3.25rem;
+}
+#ip4{
+    position: relative;
+    left: 3.6rem;
+}
+
+/* -----------------------non-active---------------- */
+.non-active{
+    display: none;
+}
+
+.sp{
+    height: 1.2rem;
+    width: 15rem;
+    font-size: .9rem;
+    position: relative;
+    left: 7.5rem;
+}

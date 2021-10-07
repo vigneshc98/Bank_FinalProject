@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarBank</title>
+    <link rel="stylesheet" href="./css/register.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <!-- --fonts--- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&family=Oswald&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+</head>
+<body>
+    <div id="container">
+        <br>
+        <div class="header">
+            <img src="./img/logo.png" >
+            <h1>Welcome to <span id="star">STAR Bank</span> of india</h1>
+        </div>
+        <form action="MailServ" method="POST" onsubmit="return OnRegisterSubmit()" onreset="clearError()" id="forms">
+            <h3>Please Register...</h3>
+            <br>
+
+        <div class="inputs">
+
+            <div class="formDesign" id="name">
+                <input type="text" name="name" placeholder="Enter your UserName" id="fname" required >
+                <div class="sp"><b><span id="formError"></span></b></div>
+            </div>
+
+            <div class="formDesign" id="email">
+                <input type="email" name="email" placeholder="enter your Email" id="femail" required>
+                <div class="sp"><b><span id="formError"></span></b></div>
+            </div>
+
+            <div class="formDesign" id="pass">
+                <input type="password" name="pass" placeholder="Enter your Password" id="fpass" required >
+                <div class="sp"><b><span id="formError"></span></b></div>
+            </div>
+
+            <div id="adjust1">
+                <div class="formDesign" id="cpass">
+                    <input type="password" name="cpass" placeholder="Re-Enter your Password" onkeyup="checkConfirmPassword(event)" id="fcpass" required>
+                    <div class="sp"><b><span id="formError"></span></b></div>
+                </div>
+               <p id="eyemove"> <i class="fa fa-eye-slash" id="togglePassword"></i></p>
+            </div>
+
+            <div class="formDesign" id="phone">
+                <input type="number" name="phone" placeholder="enter your Contact Number" id="fphone" required>
+                <div class="sp"><b><span id="formError"></span></b></div>
+            </div>
+        </div>
+
+             <div id="adjust2">
+                <input type="submit" value="submit" class="btn" id="btn_submit">
+                <input type="reset" value="clear" class="btn" id="btn_clear">
+             </div>
+             <br/>
+             <a href="index.html">Login page</a>
+        </form>
+
+    </div>
+    <script src="./js/register.js"></script>
+</body>
+</html>
