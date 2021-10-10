@@ -72,10 +72,6 @@ public class TransactionServ extends HttpServlet {
 		String transQuery1="update vignesh.registerd_user set balance= balance + "+Bamount+" where email = '"+Bemail+"' and account_number ="+BaccNO;     
 		String transQuery2="update vignesh.registerd_user set balance= balance - "+Bamount+" where email = '"+email+"'";
 		
-		
-//        String is_reload=(String)session.getAttribute("re-load");
-        
-//        if(is_reload==null) {
     		try {
     			
     			con=DBprovider.DBConnectionProvider();
@@ -105,14 +101,8 @@ public class TransactionServ extends HttpServlet {
     		        	   psmt=con.prepareStatement(depoQuery);
     		        	   int n=psmt.executeUpdate();
     		        	   if(n>0) {
-//    		        		   out.println("<!DOCTYPE html>\r\n" + 
-//    		        	      '''''''''''''(success msg was here)'''''''''''''''
-//    		        		   		"</body>\r\n" + 
-//    		        		   		"</html>");
+
     		        		   con.commit();
-//    		        		   RequestDispatcher rd= request.getRequestDispatcher("welcome.jsp");
-//    		        		   rd.include(request, response);
-//    		        		   request.setAttribute("condition1", "success1");
     		        		   response.sendRedirect("Dummy.jsp");
     		        		   
     		        	   } else {
@@ -130,14 +120,7 @@ public class TransactionServ extends HttpServlet {
     		        		   psmt=con.prepareStatement(withQuery);
     			        	   int n=psmt.executeUpdate();
     			        	   if(n>0) {
-//        		        		   out.println("<!DOCTYPE html>\r\n" + 
-//    	    		        	      '''''''''''''(success msg was here)'''''''''''''''
-//    	    		        		   		"</body>\r\n" + 
-//    	    		        		   		"</html>");
     			        		   con.commit();
-//    			        		   RequestDispatcher rd= request.getRequestDispatcher("welcome.jsp");
-//    			        		   rd.include(request, response);
-//        		        		   request.setAttribute("condition2", "success2");
     			        		   response.sendRedirect("Dummy.jsp");
     			        	   } else {
     			        		   response.sendRedirect("TransactionFailed.jsp");
@@ -168,14 +151,7 @@ public class TransactionServ extends HttpServlet {
         				int n2=psmt.executeUpdate();
         				
         				if(n1>0 && n2>0) {
-// 		        		   out.println("<!DOCTYPE html>\r\n" + 
-//  		        	      '''''''''''''(success msg was here)'''''''''''''''
-//  		        		   		"</body>\r\n" + 
-//  		        		   		"</html>");
    			        		   con.commit();
-//   			        		   RequestDispatcher rd= request.getRequestDispatcher("welcome.jsp");
-//   			        		   rd.include(request, response);
-//    		        		   request.setAttribute("condition3", "success3");
    			        		response.sendRedirect("Dummy.jsp");
         				} else {
         				   	   con.rollback();
